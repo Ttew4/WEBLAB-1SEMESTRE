@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercício 02 — Posicionamento</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f7f8fc;
+      color: #1a1a2e;
+      padding: 32px;
+    }
+
+    h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    .enunciado {
+      background: #e8f4fd;
+      border-left: 4px solid #4a6cf7;
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    .enunciado code {
+      background: #d0e8f8;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    hr { border: none; border-top: 1px solid #e2e8f0; margin: 32px 0; }
+
+    /* ===== Área do exercício ===== */
+
+    /* TODO: escreva seus estilos aqui */
+
+
+    .card {
+      position: relative;
+      width: 220px;
+      background-color: rgb(50, 68, 104);
+      border-radius: 8px;
+      color: #fff;
+      padding: 20px 10px 10px 10px;
+    }
+    .card:hover{
+      background-color: rgb(50, 68, 104, 0.9);
+      width: 230px;
+      padding: 25px 15px 15px 15px;
+      transition: all 0.2s ease;
+    } 
+
+    .badge-novo {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background-color: rgb(222, 53, 53);
+      color: #fff;
+      padding: 5px 5px 5px;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Exercício 02 — Posicionamento</h1>
+
+  <div class="enunciado">
+    <p>Crie um card com imagem e um badge "NOVO" no canto superior direito.<br>
+    Use <code>position: relative</code> no card e <code>position: absolute</code> no badge.</p>
+  </div>
+
+  <hr>
+
+  <!-- ===== Escreva seu HTML aqui ===== -->
+
+  <div class="card">
+    <img src="pulse-my26-audace.webp" alt="Imagem do carro" width="200" height="120">
+    <p>Fiat Pulse</p>
+    <span class="badge-novo">Novo!</span>
+  </div>
+
+</body>
+</html>

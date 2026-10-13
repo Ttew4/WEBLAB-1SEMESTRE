@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercício 04 — Flexbox: Navbar</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f7f8fc;
+      color: #1a1a2e;
+    }
+
+    .enunciado {
+      background: #e8f4fd;
+      border-left: 4px solid #4a6cf7;
+      padding: 16px 20px;
+      margin: 32px;
+      border-radius: 6px;
+      line-height: 1.6;
+    }
+    .enunciado h1 { font-size: 1.4rem; margin-bottom: 6px; }
+    .enunciado code {
+      background: #d0e8f8;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    hr { border: none; border-top: 1px solid #e2e8f0; margin: 32px; }
+
+    /* ===== Área do exercício ===== */
+
+    /* TODO: escreva seus estilos aqui */
+
+    .navbar{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+background-color: lch(65.43% 33.92 162.88);
+padding: 10px 20px 10px 20px;
+border-radius: 4px;
+}
+
+
+    .nav-logo{
+font-size: 1.5rem;
+color: #000000;
+font-weight: bold;
+}
+
+    .nav-links{
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: space-around;
+gap: 30px;
+list-style: none;
+}
+    .nav-links li a{
+text-decoration: none;
+color: #fff;
+font-size: 1.1rem;
+}
+    .btn-login{
+background-color: #6986f8;
+color: #fff;
+padding: 8px 16px;
+border-radius: 4px;
+text-decoration: none;}
+
+  </style>
+</head>
+<body>
+
+  <div class="enunciado">
+    <h1>Exercício 04 — Flexbox: Navbar</h1>
+    <p>Crie uma barra de navegação com <strong>logo à esquerda</strong>, links no centro
+    e um botão "Login" à direita usando apenas Flexbox.</p>
+  </div>
+
+  <hr>
+
+  <!-- ===== Escreva seu HTML aqui ===== -->
+
+  <nav class="navbar">
+    <span class="nav-logo">MeuSite</span>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Portfólio</a></li>
+    </ul>
+
+    <a href="#" class="btn-login">Login</a>
+  </nav>
+
+</body>
+</html>

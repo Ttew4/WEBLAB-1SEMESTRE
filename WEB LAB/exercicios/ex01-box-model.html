@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercício 01 — Box Model</title>
+  <style>
+    /* ===== Reset básico ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f7f8fc;
+      color: #1a1a2e;
+      padding: 32px;
+    }
+
+    h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    .enunciado {
+      background: #e8f4fd;
+      border-left: 4px solid #4a6cf7;
+      padding: 16px 20px;
+      border-radius: 6px;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    .enunciado code {
+      background: #d0e8f8;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    hr { border: none; border-top: 1px solid #e2e8f0; margin: 32px 0; }
+
+    /* ===== Área do exercício ===== */
+
+    /* TODO: escreva seus estilos aqui */
+
+  </style>
+</head>
+<body>
+
+  <h1>Exercício 01 — Box Model</h1>
+
+  <div class="enunciado">
+    <p>Crie um <code>&lt;div&gt;</code> com <code>width: 300px</code>, <code>padding: 20px</code>,
+    <code>border: 3px solid red</code> e <code>margin: 40px</code>.<br>
+    Compare o tamanho final usando <code>box-sizing: content-box</code> versus
+    <code>border-box</code>. Use as DevTools do browser (F12) para inspecionar.</p>
+  </div>
+
+  <hr>
+
+  <!-- ===== Escreva seu HTML aqui ===== -->
+  <!-- content-box -->
+  <div class="caixa-content-box">
+      <div style="
+      display:flex;
+      justify-content:center;
+      box-sizing:content-box;
+      width: 300px;
+      padding: 20px;
+      border: 3px;
+      background-color: red;
+      color:#fff;
+      margin: 40px;
+      ">
+      content-box: 300px + 40px padding + 6px border = 346px no layout
+      </div>
+  </div>
+
+  <!-- border-box -->
+  <div class="caixa-border-box">
+      <div style="
+      display:flex;
+      justify-content:center;
+      box-sizing:border-box;
+      width: 300px;
+      padding: 20px;
+      border: 3px;
+      background-color: red;
+      margin: 40px;
+      color:#fff;
+      ">
+      <p>border-box: 300px total (padding e border incluídos)
+      </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Inscrição</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Ficha de Inscrição</h1>
+    <form action="/form" method="POST">
+    <label for="name">Nome do candidato:</label>
+    <input type="name" id="name" value=""><br>
+
+    <label for="end">Endereço:</label>
+    <input type="name" id="end" value=""><br>
+
+    <label for="num">Cep:</label>
+    <input type="text" id="num" value="">
+
+    <label for="cidade"></label>
+    <select id="Cidade" name="cidade">
+        <option value="">--Cidade--</option>
+        <option value="Xique-Xique">Xique-Xique</option>
+        <option value="Pf">Passo Fundo</option>
+        <option value="Poa">Porto Alegre</option>
+        <option value="SP">São Paulo</option>
+    </select>
+    <label for="UF"></label>
+    <select id="UF" name="UF">
+        <option value="">--UF--</option>
+        <option value="Xique-Xique">BH</option>
+        <option value="RS">RS</option>
+        <option value="SP">SP</option>
+    </select><br>
+    
+    <label for="">Telefones:</label>
+    <input type="text" id="tf1" value="">
+    <input type="text" id="tf2" value="">
+    <input type="text" id="tf3" value=""><br>
+
+    <label for="">RG:</label>
+    <input type="text" id="rg" value="">
+    <label for="">CPF:</label>
+    <input type="text" id="cpf" value="">
+
+    <label for="">Sexo:</label>
+    <input type ="radio" id="Masc" name="gen" value="Masculino">
+    <label for="gen">Masculino</label>
+    <input type="radio" id="Femme" name="gen" value="Feminino">
+    <label for="gen">Feminino</label> <br>
+
+    <label for="esc">Escolaridade</label>
+    <select id="esc" name="esc">
+        <option value="">--Selecione--</option>
+        <option value="fund">Ensino Fundamental completo</option>
+        <option value="med">Ensino Médio completo</option>
+        <option value="super">Ensino Superior completo</option>
+    </select>
+    <label for="email">Email: </label>
+    <input type="email" id="email"> <br>
+
+    <label for="esc">Curso</label>
+    <select id="esc" name="esc">
+        <option value="">--Selecione--</option>
+        <option value="agro">Agronomia</option>
+        <option value="enger">Engenharia</option>
+        <option value="Psico">Psicologia</option>
+    </select>   
+    <label for="email">Senha de acompanhamento: </label>
+    <input type="password" name="senha"><br>
+
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

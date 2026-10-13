@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Cadastro </title>
+</head>
+<body>
+    <form action="a">
+
+        <h2>Dados Pessoais</h2>
+        <div>
+            <label>Nome:</label>
+            <input type="name" id="name" required> <br>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label>Senha:</label>
+            <input type="password" id="senha" required>
+        </div>
+        <div>
+            <label>Telefone:</label>
+            <input type="tel" id="tel" required>
+        </div>
+        <div>
+            <label>Data de nascimento:</label>
+            <input type="date" id="data" required>
+        </div>
+        <div>
+            <label>Cor favorita:</label>
+            <input type="color" id="cor">
+        </div>
+
+        <h2>Datas e Horários</h2>
+        <div>
+            <label>Data e horário de cadastro:</label>
+            <input type="datetime-local" id="datacadastro" required>
+        </div>
+        <div>
+            <label>Horário preferido:</label>
+            <input type="time" id="time" required>
+        </div>
+        <div>
+            <label>Mês de referência:</label>
+            <input type="month" id="mes" required>
+        </div>
+        <div>
+            <label>Semana do ano:</label>
+            <input type="week" id="semana" required>
+        </div>
+        <h2>Informações Numéricas</h2>
+        <div>
+            <label>Idade:</label>
+            <input type="number" id="idade" required>
+        </div>
+        <div>
+            <label>Nível de satisfação:</label>
+            <input type="range" id="satisfacao" min="0" max="100" step="5">
+        </div>
+
+        <h2>Upload de arquivos</h2>
+        <div>
+            <label>Foto de perfil:</label>
+            <input type="file" id="fotoperfil">
+        </div>
+        <h2>Escolhas</h2>
+        <div>
+            <label for="">Gênero:</label>
+            <input type ="radio" id="Masc" name="gen" value="Masculino">
+            <label for="gen">Masculino</label>
+            <input type="radio" id="Femme" name="gen" value="Feminino">
+            <label for="gen">Feminino</label> <br>
+        </div>
+        <div>
+            <label for="">Interesses:</label>
+            <input type="checkbox" id ="html" name="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id ="CSS" name="CSS">
+            <label for="CSS">CSS</label>
+            <input type="checkbox" id ="JavaScript" name="JavaScript" >
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" id ="Python" name="Python" >
+            <label for="Python">Python</label><br>
+        </div>
+        <div>
+        <p><i><strong>~~Finalizar~~</strong></p></i>
+        <input type="submit" value="Enviar" required>
+        <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

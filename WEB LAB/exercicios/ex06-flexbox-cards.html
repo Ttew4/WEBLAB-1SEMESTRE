@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercício 06 — Flexbox: Grid de Cards</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f7f8fc;
+      color: #1a1a2e;
+      padding: 32px;
+    }
+
+    .enunciado {
+      background: #e8f4fd;
+      border-left: 4px solid #4a6cf7;
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      border-radius: 6px;
+      line-height: 1.6;
+    }
+    .enunciado h1 { font-size: 1.4rem; margin-bottom: 6px; }
+    .enunciado code {
+      background: #d0e8f8;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    hr { border: none; border-top: 1px solid #e2e8f0; margin: 32px 0; }
+
+    /* ===== Área do exercício ===== */
+
+    /* TODO: escreva seus estilos aqui */
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      padding: 10px;
+      background: #b7e8ad;
+      border-radius: 6px;
+    }
+
+    .card h3 {
+      padding: 0;
+      color: #38384c;
+    } 
+  </style>
+</head>
+<body>
+
+  <div class="enunciado">
+    <h1>Exercício 06 — Flexbox: Grid de Cards Responsivo</h1>
+    <p>Crie 6 cards com <code>flex: 1 1 200px</code> e <code>flex-wrap: wrap</code>.<br>
+    Observe como eles se reorganizam ao redimensionar a janela do browser.</p>
+  </div>
+
+  <hr>
+
+  <!-- ===== Escreva seu HTML aqui ===== -->
+
+  <div class="cards-container">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>Descrição do card 1. Adicione o conteúdo que quiser.</p>
+    </div>
+    <div class="card">
+      <h3>Card 2</h3>
+      <p>Descrição do card 2. Adicione o conteúdo que quiser.</p>
+    </div>
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>Descrição do card 3. Adicione o conteúdo que quiser.</p>
+    </div>
+    <div class="card">
+      <h3>Card 4</h3>
+      <p>Descrição do card 4. Adicione o conteúdo que quiser.</p>
+    </div>
+    <div class="card">
+      <h3>Card 5</h3>
+      <p>Descrição do card 5. Adicione o conteúdo que quiser.</p>
+    </div>
+    <div class="card">
+      <h3>Card 6</h3>
+      <p>Descrição do card 6. Adicione o conteúdo que quiser.</p>
+    </div>
+  </div>
+
+</body>
+</html>

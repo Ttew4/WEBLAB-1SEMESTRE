@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercício 05 — Flexbox: Layout Completo</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f7f8fc;
+      color: #1a1a2e;
+      min-height: 100vh;
+    }
+
+    .enunciado {
+      background: #e8f4fd;
+      border-left: 4px solid #4a6cf7;
+      padding: 16px 20px;
+      margin: 24px;
+      border-radius: 6px;
+      line-height: 1.6;
+    }
+    .enunciado h1 { font-size: 1.4rem; margin-bottom: 6px; }
+    .enunciado code {
+      background: #d0e8f8;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+
+    hr { border: none; border-top: 1px solid #e2e8f0; margin: 24px; }
+
+    /* ===== Área do exercício ===== */
+
+    /* TODO: escreva seus estilos aqui */
+
+    .page-wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-header{
+    color: #000000;
+    padding: 10px;
+    }
+    .page-nav ul{
+    display: flex;
+    background-color: rgb(84, 132, 181);
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    list-style: none;
+    padding: 10px;
+    font-style:italic;
+  }
+    .page-nav a{
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+    .page-body{
+    display: flex;
+    flex-direction: row;  
+    }
+
+    .page-sidebar{
+        background-color: rgb(67, 105, 143);  
+        display:flex;
+        flex-direction: column; 
+        padding: 20px;
+        flex: 0 0 200px;
+        list-style: none;
+    } 
+
+    .page-sidebar ul{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+      }
+      .page-sidebar a{
+        color: #ffffff;
+        text-decoration: none;
+      }
+    .page-main{  
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        flex: 1;
+        background-color: rgb(237, 232, 213);
+        color:#616161;
+      }
+    .page-footer{
+        background-color: rgb(84, 132, 181);
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+    } 
+
+  </style>
+</head>
+<body>
+
+  <div class="enunciado">
+    <h1>Exercício 05 — Flexbox: Layout Completo</h1>
+    <p>Monte um layout de página completo com: <strong>header</strong>, navbar horizontal,
+    área principal (<strong>sidebar</strong> + conteúdo) e <strong>footer</strong>.<br>
+    Use <em>somente Flexbox</em> para o posicionamento.</p>
+  </div>
+
+  <hr>
+
+  <!-- ===== Escreva seu HTML aqui ===== -->
+
+  <div class="page-wrapper">
+
+    <header class="page-header">
+      <h1>Meu Site</h1>
+    </header>
+
+    <nav class="page-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="page-body">
+      <aside class="page-sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+          <li><a href="#">Categoria 1</a></li>
+          <li><a href="#">Categoria 2</a></li>
+          <li><a href="#">Categoria 3</a></li>
+        </ul>
+      </aside>
+
+      <main class="page-main">
+        <h2>Conteúdo Principal</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </main>
+    </div>
+
+    <footer class="page-footer">
+      <p>&copy; 2026 Meu Site</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

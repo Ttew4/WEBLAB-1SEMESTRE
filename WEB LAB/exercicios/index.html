@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercícios — Aula 03 CSS</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f7f8fc;
+      color: #1a1a2e;
+      padding: 40px 32px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header { margin-bottom: 40px; }
+    header h1 { font-size: 2rem; color: #4a6cf7; }
+    header p { color: #64748b; margin-top: 6px; }
+
+    .ex-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+
+    .ex-list li a {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 24px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 2px 8px rgba(0,0,0,.05);
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .ex-list li a:hover {
+      border-color: #4a6cf7;
+      box-shadow: 0 4px 16px rgba(74,108,247,.15);
+    }
+
+    .ex-num {
+      background: #4a6cf7;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .ex-info h2 { font-size: 1rem; margin-bottom: 4px; }
+    .ex-info p  { font-size: .875rem; color: #64748b; }
+
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: .85rem;
+      color: #94a3b8;
+    }
+    footer a { color: #4a6cf7; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Exercícios — Aula 03</h1>
+    <p>CSS: Box Model · Posicionamento · Display · Flexbox</p>
+  </header>
+
+  <ul class="ex-list">
+    <li>
+      <a href="ex01-box-model.html">
+        <span class="ex-num">01</span>
+        <div class="ex-info">
+          <h2>Box Model</h2>
+          <p>Compare content-box e border-box usando DevTools.</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="ex02-posicionamento.html">
+        <span class="ex-num">02</span>
+        <div class="ex-info">
+          <h2>Posicionamento</h2>
+          <p>Card com badge usando position: relative e absolute.</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="ex03-display.html">
+        <span class="ex-num">03</span>
+        <div class="ex-info">
+          <h2>Display</h2>
+          <p>Lista horizontal com inline e inline-block.</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="ex04-flexbox-navbar.html">
+        <span class="ex-num">04</span>
+        <div class="ex-info">
+          <h2>Flexbox — Navbar</h2>
+          <p>Barra de navegação com logo, links e botão Login usando Flexbox.</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="ex05-flexbox-layout.html">
+        <span class="ex-num">05</span>
+        <div class="ex-info">
+          <h2>Flexbox — Layout Completo</h2>
+          <p>Página com header, nav, sidebar, conteúdo e footer.</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="ex06-flexbox-cards.html">
+        <span class="ex-num">06</span>
+        <div class="ex-info">
+          <h2>Flexbox — Grid de Cards Responsivo</h2>
+          <p>6 cards com flex-wrap que se reorganizam ao redimensionar.</p>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+  <footer>
+    <a href="../index.html">&larr; Voltar para a aula</a>
+  </footer>
+
+</body>
+</html>

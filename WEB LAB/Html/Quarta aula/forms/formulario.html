@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="/form" method="POST">
+    <h1>Formulário</h1>
+    <p>Input testes</p>
+    <input type="color"><br>
+    <h2>Formulário real</h2>
+    <label for="nome">Digite seu nome </label><br>
+    <input type="text" id="nome" placeholder="nome aqui..."> <br>
+    <label for="email">Digite seu email </label><br>
+    <input type="email" id="email" placeholder="email..."> <br>
+    <label for="email">Digite sua senha </label><br>
+    <input type="password" name="senha" 
+    placeholder="senha..."> <br><br>
+
+    <label for="">Escolha:</label><br>
+    <input type ="radio" id="filmea" name="filmeab" value="Filme A">
+    <label for="filmea">Filme A</label>
+    <input type="radio" id="filmeb" name="filmeab" value="Filme B">
+    <label for="filmeb">Filme B</label> <br>
+    <br>
+
+    <label for="">Interesses</label><br>
+    <input type="checkbox" id ="musica" name="musica" value="Musica">
+    <label for="musica">Musica</label>
+    <input type="checkbox" id ="livro" name="livro" value="Livro">
+    <label for="Livro">Livro</label>
+    <input type="checkbox" id ="Games" name="Games" value="Games">
+    <label for="Games">Games</label><br><br>
+    <textarea
+    id="mensamge"
+    name="mensamge"
+    placeholder="Deixe seu feedback!"
+    ></textarea><br>
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
